@@ -1,0 +1,39 @@
+@import "../../SCSS/main.scss";
+
+.cards {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding: 120px 170px 0 170px;
+    margin: 0;
+    justify-content: center;
+
+    &__item {
+    width: 540px;
+    padding: 40px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: $grey-bg;
+    }
+
+    &__item:nth-child(2) {
+        margin: 0;
+    }
+    
+    &__title {
+        @include cards_title;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        @include subtitle;
+        color: $grey-txt;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__text{
+        @include small_txt;
+    }
+}

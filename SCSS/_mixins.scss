@@ -1,0 +1,60 @@
+
+@mixin title {
+    font: {
+      family: 'Inter';
+      size: 60px;
+      weight: 700;
+    }
+    line-height: 1.15;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  @mixin small_txt {
+    font: {
+        family: 'Inter';
+        size: 16px;
+        weight: 400;
+      }
+      line-height: 1.5;
+      color: $grey-txt
+  }
+
+@mixin subtitle {
+    font: {
+        family: 'Inter';
+        size: 18px;
+        weight: 400;
+      }
+      line-height: 1.11;
+      color: $white-txt-lighter;
+  }
+
+@mixin paragraph {
+    font: {
+        family: 'Inter';
+        size: 60px;
+        weight: 600;
+      }
+      line-height: 1.15;
+      color: rgba(17, 17, 17, 1); 
+  }
+
+@mixin btn_txt {
+    font: {
+        family: 'Inter';
+        size: 16px;
+        weight: 600;
+      }
+      line-height: 1.15;
+      color: $black-txt;
+  }
+
+@mixin cards_title {
+  font: {
+    family: 'Inter';
+    size: 32px;
+    weight: 600;
+  }
+  line-height: 1.15;
+  color: $black-txt;
+}

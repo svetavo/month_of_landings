@@ -1,0 +1,11 @@
+@import "../../SCSS/main.scss";
+
+.text {
+    padding: 120px 170px 0 170px;
+    margin: auto;
+
+    &__paragraph {
+        margin: 0;
+        @include paragraph;
+    }
+}
