@@ -7,7 +7,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 120px 170px 0 170px;
+  padding: 55px 160px 0 160px;
   margin: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -16,7 +16,7 @@
 
 .cards__item {
   width: 540px;
-  padding: 40px;
+  padding: 40px 40px 40px 40px;
   margin-right: 20px;
   border-radius: 20px;
   background-color: #f8f8f8;
@@ -40,7 +40,7 @@
   font-family: 'Inter';
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.11;
+  line-height: 1.44;
   color: rgba(255, 255, 255, 0.7);
   color: rgba(17, 17, 17, 0.6);
   margin: 0;

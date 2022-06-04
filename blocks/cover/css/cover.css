@@ -1,5 +1,5 @@
 .cover {
-  height: 600px;
+  height: 610px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,9 +12,9 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  padding-top: 40px;
-  padding-left: 170px;
-  padding-right: 200px;
+  padding-top: 30px;
+  padding-left: 160px;
+  padding-right: 150px;
   border-radius: 20px;
   background-color: #222222;
   position: relative;
@@ -22,8 +22,8 @@
 }
 
 .cover_footer {
-  height: 410px;
-  padding: 60px 0px 60px 220px;
+  padding-top: 60px;
+  max-height: 410px;
 }
 
 .cover_footer::after {
@@ -56,10 +56,19 @@
   padding-bottom: 15px;
 }
 
+.cover__button_footer:hover {
+  cursor: pointer;
+  opacity: 0.93;
+}
+
 .cover__button_header {
   width: 240px;
   height: 54px;
   padding: 15px 75px;
+}
+
+.cover__button:hover {
+  cursor: pointer;
 }
 
 .cover__logo {
@@ -72,20 +81,27 @@
 }
 
 .cover__title {
+  margin: 0;
+}
+
+.cover__title_header {
   font-family: 'Inter';
   font-size: 60px;
   font-weight: 700;
   line-height: 1.15;
   color: white;
   width: 650px;
-  margin: 0;
-}
-
-.cover__title_header {
   margin-bottom: 28px;
 }
 
 .cover__title_footer {
+  font-family: 'Inter';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #222222;
+  width: 460px;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -93,7 +109,7 @@
   font-family: 'Inter';
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.11;
+  line-height: 1.44;
   color: rgba(255, 255, 255, 0.7);
   width: 450px;
   margin: 0;
@@ -108,13 +124,13 @@
 }
 
 .cover__image {
-  width: 311px;
+  width: 321px;
   -webkit-filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
 }
 
 .cover__image_footer {
   position: absolute;
-  top: -60px;
+  top: -40px;
   right: 220px;
 }

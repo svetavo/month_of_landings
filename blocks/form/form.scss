@@ -1,7 +1,7 @@
 @import "../../SCSS/main.scss";
 
 .form {
-    padding: 120px 170px;
+    padding: 120px 160px;
 
     &__container {
         background-color: $grey-bg;
@@ -64,10 +64,26 @@
 
     &__field {
         @include small_txt;
-        color: rgba(17, 17, 17, 0.3);
+        color: $black-txt;
         border-radius: 8px;
         border: none;
         padding-left: 20px;
+    }
+
+    &__field::placeholder {
+        color: rgba(17, 17, 17, 0.3);
+    }
+
+    &__field:hover {
+        cursor: pointer;
+        opacity: 0.85;
+        outline-style: solid;
+        outline-color: rgba(228, 228, 228, 1);
+    }
+
+    &__field:focus {
+        outline-style: solid;
+        outline-color: rgba(228, 228, 228, 1);
     }
 
     &__button {
@@ -78,5 +94,10 @@
         border-radius: 8px;
         border: none;
         align-self: end;
+    }
+
+    &__button:hover {
+        cursor: pointer;
+        opacity: 0.85;
     }
 }
