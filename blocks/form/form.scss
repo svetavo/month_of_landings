@@ -2,6 +2,12 @@
 
 .form {
     padding: 120px 160px;
+    @media screen and (max-width: 768px) {
+        padding: 70px 30px;
+    };
+    @media screen and (max-width: 320px) {
+        padding: 70px 10px;
+    }
 
     &__container {
         background-color: $grey-bg;
@@ -12,17 +18,36 @@
         align-items: center;
         border-radius: 10px;
         padding: 60px;
+        @media screen and (max-width: 768px) {
+            padding: 30px 119px;
+        }
+        @media screen and (max-width: 320px) {
+            padding: 20px;
+        }
+
     }
 
     &__title {
         @include cards_title;
-        width: 500px;
+        @media screen and (max-width: 768px) {
+            font-size: 26px;
+        };
+        @media screen and (max-width: 320px) {
+            margin-bottom: 20px;
+        }
+        max-width: 500px;
         margin: 0;
         text-align: center;
     }
 
     &__subtitle {
         @include small_txt;
+        @media screen and (max-width: 768px) {
+            font-size: 15px;
+        };
+        @media screen and (max-width: 320px) {
+            margin-bottom: 80px;
+        };
         text-align: center;
         margin-bottom: 100px;
     }
@@ -34,7 +59,11 @@
     &__user-data {
         height: 54px;
         margin-right: 40px;
-        width: 430px
+        width: 70%;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
 
     &__user-data:nth-child(2) {
@@ -46,7 +75,9 @@
         margin-bottom: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;;
+        }
     }
 
     &__message {
@@ -57,17 +88,24 @@
     }
 
     &__user-msg {
-        width: 940px;
+        width: 100%;
         height: 130px;
         margin-bottom: 30px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__field {
         @include small_txt;
+        @media screen and (max-width: 320px) {
+            font-size: 12px;
+        };
         color: $black-txt;
         border-radius: 8px;
         border: none;
         padding-left: 20px;
+        box-sizing: border-box;
     }
 
     &__field::placeholder {
@@ -94,6 +132,13 @@
         border-radius: 8px;
         border: none;
         align-self: end;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            font-size: 14px;
+        };
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
     }
 
     &__button:hover {

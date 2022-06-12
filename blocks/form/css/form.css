@@ -2,6 +2,18 @@
   padding: 120px 160px;
 }
 
+@media screen and (max-width: 768px) {
+  .form {
+    padding: 70px 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form {
+    padding: 70px 10px;
+  }
+}
+
 .form__container {
   background-color: #f8f8f8;
   display: -webkit-box;
@@ -22,15 +34,39 @@
   padding: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .form__container {
+    padding: 30px 119px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form__container {
+    padding: 20px;
+  }
+}
+
 .form__title {
   font-family: 'Inter';
   font-size: 32px;
   font-weight: 600;
   line-height: 1.15;
   color: #222222;
-  width: 500px;
+  max-width: 500px;
   margin: 0;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .form__title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form__title {
+    margin-bottom: 20px;
+  }
 }
 
 .form__subtitle {
@@ -43,6 +79,18 @@
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 768px) {
+  .form__subtitle {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form__subtitle {
+    margin-bottom: 80px;
+  }
+}
+
 .form__area {
   width: 100%;
 }
@@ -50,7 +98,14 @@
 .form__user-data {
   height: 54px;
   margin-right: 40px;
-  width: 430px;
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .form__user-data {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .form__user-data:nth-child(2) {
@@ -67,9 +122,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .form__user-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .form__message {
@@ -80,9 +141,15 @@
 }
 
 .form__user-msg {
-  width: 940px;
+  width: 100%;
   height: 130px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .form__user-msg {
+    margin-bottom: 50px;
+  }
 }
 
 .form__field {
@@ -95,6 +162,14 @@
   border-radius: 8px;
   border: none;
   padding-left: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 320px) {
+  .form__field {
+    font-size: 12px;
+  }
 }
 
 .form__field::-webkit-input-placeholder {
@@ -139,6 +214,19 @@
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+}
+
+@media screen and (max-width: 768px) {
+  .form__button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form__button {
+    font-size: 12px;
+  }
 }
 
 .form__button:hover {
