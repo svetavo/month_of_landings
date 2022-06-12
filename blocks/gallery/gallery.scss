@@ -2,14 +2,21 @@
 
 .gallery {
     display: flex;
+    margin: 0;
     flex-direction: row;
     justify-content: center;
-    padding-top: 120px;
-    
+    padding: 120px 160px 60px 160px;
+    @media screen and (max-width: 1024px) {
+        padding: 70px 30px 70px 30px;
+    }
 
     &__item {
-        width: 350px;
+        max-width: 350px;
         margin-right: 20px;
         filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            max-width: 30%;
+            margin-right: 15px;
+        };
     }
 }
